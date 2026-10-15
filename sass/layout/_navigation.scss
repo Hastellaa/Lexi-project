@@ -1,0 +1,29 @@
+.navigation {
+
+    &__list {
+        list-style: none;
+        display: grid;
+        grid-template-columns: 10rem repeat(2, 13rem) 11rem 13rem;
+        margin-top: 4.7rem;
+        margin-right: 8rem;
+        align-items: center;
+
+    }
+
+    &__item {
+
+        &--icon {
+            width: 6.4rem;
+            height: auto;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $color-white;
+        font-size: 1.6rem;
+        width: 500;
+    }
+
+
+}

@@ -20,4 +20,23 @@ body {
   background-repeat: no-repeat;
 }
 
+.navigation__list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 10rem repeat(2, 13rem) 11rem 13rem;
+  margin-top: 4.7rem;
+  margin-right: 8rem;
+  align-items: center;
+}
+.navigation__item--icon {
+  width: 6.4rem;
+  height: auto;
+}
+.navigation__link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.6rem;
+  width: 500;
+}
+
 /*# sourceMappingURL=style.css.map */
