@@ -9,12 +9,17 @@
 html {
 
     font-size: 62.5%;
+
 }
 
 body {
 
     font-family: "iranyekan" , sans-serif;
     color: #fff;
+    width:100vh;
     font-weight: 400;
     box-sizing: border-box;
+    
+    background-image:linear-gradient(to left top ,$color-gray-dark-1 , $color-gray-dark-2 , $color-gray-light-2 ,$color-gray-light-1);
+    background-repeat: no-repeat;
 }

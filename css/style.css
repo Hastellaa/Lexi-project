@@ -13,8 +13,11 @@ html {
 body {
   font-family: "iranyekan", sans-serif;
   color: #fff;
+  width: 100vh;
   font-weight: 400;
   box-sizing: border-box;
+  background-image: linear-gradient(to left top, rgb(28, 30, 32), rgb(17, 18, 19), rgb(41, 42, 45), rgb(61, 63, 67));
+  background-repeat: no-repeat;
 }
 
 /*# sourceMappingURL=style.css.map */
