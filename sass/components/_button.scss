@@ -24,4 +24,43 @@
     &:active {
         transform: translateY(-.2rem);
     }
+
+    &__video {
+
+        &,
+    &:link,
+    &:visited {
+        display: inline-block;
+        transition: all .2s; 
+    }
+
+        &:hover {
+        transform: translateY(-.4rem);
+    }
+
+    &:active {
+        transform: translateY(-.2rem);
+    }
+
+    &--link {
+        display: inline-block;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+
+            width: 8.5rem;
+            height: 8.5rem;
+
+            border: 2px solid $color-red-light-1;
+            border-radius: 50%;
+            margin-top: -6.8rem;
+            margin-right: -2.8rem;
+
+            pointer-events: none;
+        }
+    }
+
+    }
 }

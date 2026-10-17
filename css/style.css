@@ -39,6 +39,31 @@ body {
 .button:active {
   transform: translateY(-0.2rem);
 }
+.button__video, .button__video:link, .button__video:visited {
+  display: inline-block;
+  transition: all 0.2s;
+}
+.button__video:hover {
+  transform: translateY(-0.4rem);
+}
+.button__video:active {
+  transform: translateY(-0.2rem);
+}
+.button__video--link {
+  display: inline-block;
+  position: relative;
+}
+.button__video--link::before {
+  content: "";
+  position: absolute;
+  width: 8.5rem;
+  height: 8.5rem;
+  border: 2px solid rgb(255, 146, 145);
+  border-radius: 50%;
+  margin-top: -6.8rem;
+  margin-right: -2.8rem;
+  pointer-events: none;
+}
 
 .hero {
   width: 100%;
@@ -123,6 +148,46 @@ body {
   color: #fff;
   font-size: 1.6rem;
   width: 500;
+}
+
+.about {
+  padding: 14rem;
+}
+.about__container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(15rem, 80rem));
+  grid-gap: 10rem;
+}
+.about__heading {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 10rem;
+}
+.about__title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 4.4rem;
+}
+.about__text {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 3.5rem;
+}
+.about__img {
+  align-self: end;
+  width: 56.8rem;
+  height: auto;
+}
+.about__icon {
+  width: 3.8rem;
+  height: 3.8rem;
+  padding: 2.4rem;
+  background-color: rgb(255, 146, 145);
+  border-radius: 50%;
+  box-sizing: content-box;
+  margin-top: -6.1rem;
+  margin-right: -3.8rem;
+  box-shadow: 0px -4px 4px 0px rgb(180, 89, 64) inset;
 }
 
 /*# sourceMappingURL=style.css.map */
