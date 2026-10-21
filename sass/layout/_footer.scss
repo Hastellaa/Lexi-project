@@ -1,0 +1,72 @@
+.footer {
+    padding: 6rem;
+    margin-top: 8rem;
+
+    &__container {
+        display: grid;
+        grid-template-columns: 40% 20% 20%;
+        gap: 10rem;
+        background-color: $color-gray-dark-3;
+        border-radius: 12px;
+        padding: 5rem;
+    }
+
+    &__about {}
+
+    &__logo {
+        width: 6.4rem;
+        height: auto;
+    }
+
+    &__description {
+        font-size: 1.6rem;
+        font-weight: 500;
+        margin-top: 3rem;
+        line-height: 3.2rem;
+    }
+
+    &__navigation {}
+
+    &__heading {
+        font-size: 2.4rem;
+        font-weight: 700;
+        margin-bottom: 2.5rem;
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__item {
+        padding: 1.5rem;
+    }
+
+    &__link {
+        font-size: 1.6rem;
+        font-weight: 500;
+        text-decoration: none;
+        color: $color-white;
+
+
+        &--active {
+            color: $color-purple;
+
+            &::after {
+                content: "";
+                display: block;
+                width: 3.5rem;
+                height: 2px;
+                background-color: $color-purple;
+                margin-top: 0.5rem;
+            }
+
+        }
+
+    }
+
+    &__licenses {
+
+        &--img {}
+    }
+
+}

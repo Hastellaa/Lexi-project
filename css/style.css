@@ -65,6 +65,56 @@ body {
   pointer-events: none;
 }
 
+.footer {
+  padding: 6rem;
+  margin-top: 8rem;
+}
+.footer__container {
+  display: grid;
+  grid-template-columns: 40% 20% 20%;
+  gap: 10rem;
+  background-color: rgb(53, 53, 53);
+  border-radius: 12px;
+  padding: 5rem;
+}
+.footer__logo {
+  width: 6.4rem;
+  height: auto;
+}
+.footer__description {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-top: 3rem;
+  line-height: 3.2rem;
+}
+.footer__heading {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+}
+.footer__list {
+  list-style: none;
+}
+.footer__item {
+  padding: 1.5rem;
+}
+.footer__link {
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.footer__link--active {
+  color: rgb(118, 97, 164);
+}
+.footer__link--active::after {
+  content: "";
+  display: block;
+  width: 3.5rem;
+  height: 2px;
+  background-color: rgb(118, 97, 164);
+  margin-top: 0.5rem;
+}
 .hero {
   width: 100%;
   display: grid;
