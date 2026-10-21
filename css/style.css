@@ -296,6 +296,29 @@ body {
   transform: translateY(-2.5rem);
 }
 
+.rules {
+  margin-top: 3rem;
+  padding: 10rem;
+}
+.rules__container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(15rem, 60rem));
+  gap: 10rem;
+}
+.rules__heading {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 3rem;
+}
+.rules__text {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 3.2rem;
+}
+.rules__img {
+  width: 60rem;
+}
+
 .feature {
   display: grid;
   grid-template-columns: repeat(2, minmax(15rem, 55rem));
