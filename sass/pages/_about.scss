@@ -6,7 +6,7 @@
         display: grid;
         grid-template-columns: repeat(2, minmax(15rem, 80rem));
         grid-gap: 10rem;
-
+        
     }
 
     &__heading {
@@ -30,9 +30,11 @@
     }
 
     &__img {
-        align-self: end;
+        align-self: start;
         width: 56.8rem;
         height: auto;
+        
+
     }
 
     &__icon {
