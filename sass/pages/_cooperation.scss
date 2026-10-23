@@ -1,0 +1,121 @@
+.cooperation {
+    padding: 10rem;
+
+    &__container {
+        display: grid;
+        grid-template-columns: 40% 50%;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    &__content {}
+
+    &__heading {
+        font-size: 2.8rem;
+        font-weight: 800;
+        margin-bottom: 5rem;
+    }
+
+    &__description {
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 3.1rem;
+        margin-bottom: 4rem;
+
+    }
+
+    &__form {
+        display: grid;
+        grid-template-columns: 55% 30%;
+        justify-content: space-between;
+        gap: 1.5rem;
+    }
+
+    &__field {
+        min-width: 0;
+    }
+
+    &__label {}
+
+    &__input {
+        width: 32rem;
+        height: 4.4rem;
+
+        background-color: $color-gray-light-4;
+        border-image-source: linear-gradient(180deg, $color-gray-light-4 0%, rgba($color-gray-light-4, 0.598958) 26.56%, rgba($color-gray-light-4, 0) 100%);
+
+        border: 1px solid transparent;
+        border-image-slice: 1;
+        border-radius: 10px;
+        padding: 0 1.5rem;
+
+        color: $color-white;
+        font-size: 1.4rem;
+        font-weight: 400;
+
+        direction: rtl;
+        text-align: right;
+
+        &::placeholder {
+            color: $color-gray-light-6;
+            font-size: 1.4rem;
+            font-weight: 400;
+            opacity: 1;
+
+        }
+
+        &:focus {
+            outline: none;
+            border: 1px solid $color-purple;
+        }
+    }
+
+    &__agreement {
+        font-size: 1.4rem;
+        font-weight: 400;
+        display: grid;
+        grid-template-columns: 1.8rem auto;
+        align-items: center;
+        justify-content: start;
+        gap: 2rem;
+
+        cursor: pointer;
+    }
+
+    &__checkbox {
+        appearance: none;
+
+        width: 2rem;
+        height: 2rem;
+
+        border: 2px solid $color-gray-light-7;
+        border-radius: 5px;
+        background-color: transparent;
+
+        cursor: pointer;
+
+        &:checked {
+            background-color: $color-purple;
+
+        }
+
+        &:checked::after {
+            content: "";
+            display: block;
+
+            color: white;
+            font-size: 1.6rem;
+            line-height: 1.6rem;
+            text-align: center;
+        }
+    }
+
+
+    &__visual {
+        transform: translateX(-5rem);
+    }
+
+    &__img {
+        width: 70rem;
+    }
+}

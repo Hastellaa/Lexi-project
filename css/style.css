@@ -65,6 +65,17 @@ body {
   pointer-events: none;
 }
 
+.cooperation__button {
+  font-size: 1.6rem;
+  font-weight: 400;
+  background-color: rgb(118, 97, 164);
+  width: 32rem;
+  height: 4.8rem;
+  border-radius: 12px;
+  color: rgb(255, 255, 255);
+  margin-top: 0.8rem;
+}
+
 .footer {
   padding: 6rem;
 }
@@ -294,6 +305,97 @@ body {
   width: 2.5rem;
   height: 2.5rem;
   transform: translateY(-2.5rem);
+}
+
+.cooperation {
+  padding: 10rem;
+}
+.cooperation__container {
+  display: grid;
+  grid-template-columns: 40% 50%;
+  justify-content: space-between;
+  align-items: start;
+}
+.cooperation__heading {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 5rem;
+}
+.cooperation__description {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 3.1rem;
+  margin-bottom: 4rem;
+}
+.cooperation__form {
+  display: grid;
+  grid-template-columns: 55% 30%;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+.cooperation__field {
+  min-width: 0;
+}
+.cooperation__input {
+  width: 32rem;
+  height: 4.4rem;
+  background-color: rgb(72, 72, 72);
+  border-image-source: linear-gradient(180deg, rgb(72, 72, 72) 0%, rgba(72, 72, 72, 0.598958) 26.56%, rgba(72, 72, 72, 0) 100%);
+  border: 1px solid transparent;
+  border-image-slice: 1;
+  border-radius: 10px;
+  padding: 0 1.5rem;
+  color: rgb(255, 255, 255);
+  font-size: 1.4rem;
+  font-weight: 400;
+  direction: rtl;
+  text-align: right;
+}
+.cooperation__input::placeholder {
+  color: rgb(101, 101, 101);
+  font-size: 1.4rem;
+  font-weight: 400;
+  opacity: 1;
+}
+.cooperation__input:focus {
+  outline: none;
+  border: 1px solid rgb(118, 97, 164);
+}
+.cooperation__agreement {
+  font-size: 1.4rem;
+  font-weight: 400;
+  display: grid;
+  grid-template-columns: 1.8rem auto;
+  align-items: center;
+  justify-content: start;
+  gap: 2rem;
+  cursor: pointer;
+}
+.cooperation__checkbox {
+  appearance: none;
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid rgb(112, 112, 114);
+  border-radius: 5px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.cooperation__checkbox:checked {
+  background-color: rgb(118, 97, 164);
+}
+.cooperation__checkbox:checked::after {
+  content: "";
+  display: block;
+  color: white;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  text-align: center;
+}
+.cooperation__visual {
+  transform: translateX(-5rem);
+}
+.cooperation__img {
+  width: 70rem;
 }
 
 .rules {
