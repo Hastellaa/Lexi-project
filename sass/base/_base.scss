@@ -14,12 +14,66 @@ html {
 
 body {
 
-    font-family: "iranyekan" , sans-serif;
+    font-family: "iranyekan", sans-serif;
     color: #fff;
-    width:100%;
+    width: 100%;
     font-weight: 400;
     box-sizing: border-box;
-    
-    background-image:linear-gradient(to left top ,$color-gray-dark-1 , $color-gray-dark-2 , $color-gray-light-2 ,$color-gray-light-1);
-    background-repeat: no-repeat;
+
+    background-image: linear-gradient(to left top, $color-gray-dark-1 , $color-gray-dark-2 , $color-gray-light-2 , $color-gray-light-1);
+    //  background-repeat: no-repeat;
+    position: relative;
+    isolation: isolate;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+        z-index: -1;
+        pointer-events: none;
+    }
+
+}
+
+.main_page {
+
+    &::before {
+        background-image:
+            radial-gradient(ellipse 46.5rem 46.5rem at 1% 16%,
+                rgba($color-purple, 0.5) 15%,
+                transparent 50%),
+
+            radial-gradient(ellipse 52rem 52rem at 100% 28%,
+                rgba($color-purple, 0.5) 0%,
+                transparent 50%),
+
+            radial-gradient(ellipse 52rem 52rem at 2% 46%,
+                rgba($color-purple, 0.5) 10%,
+                transparent 50%),
+
+            radial-gradient(ellipse 52rem 52rem at 97% 70%,
+                rgba($color-purple, 0.5) 0%,
+                transparent 60%),
+
+            radial-gradient(ellipse 72rem 72rem at 0% 97%,
+                rgba($color-purple, 0.5) 0%,
+                transparent 60%);
+    }
+}
+
+.inner_page {
+
+    &::before {
+        background-image:
+
+            radial-gradient(ellipse 52rem 52rem at 95% 15%,
+                rgba($color-purple, 0.5) 0%,
+                transparent 50%),
+
+            radial-gradient(ellipse 72rem 72rem at 0% 97%,
+                rgba($color-purple, 0.5) 0%,
+                transparent 60%);
+    }
 }
