@@ -57,21 +57,21 @@
         }
 
         &--3 {
-                &::before {
-                    content: "";
-                    position: absolute;
+            &::before {
+                content: "";
+                position: absolute;
 
-                    left: 0;
-                    top: 0;
-                    width: 3rem;
-                    height: 2rem;
+                left: 0;
+                top: 0;
+                width: 3rem;
+                height: 2rem;
 
-                    background-color: $color-purple;
-                    clip-path: polygon(0 0, 100% 0, 0 100%);
+                background-color: $color-purple;
+                clip-path: polygon(0 0, 100% 0, 0 100%);
 
-                    z-index: 2;
-                }
+                z-index: 2;
             }
+        }
     }
 
 
@@ -110,12 +110,22 @@
     }
 
     &__link {
-        font-size: 1.4rem;
-        font-weight: 800;
-        columns: $color-purple;
-        text-decoration: none;
-        margin-top: auto;
-        margin-right: 22rem;
+
+        &,
+        &:link,
+        &:visited {
+            font-size: 1.4rem;
+            font-weight: 800;
+            columns: $color-purple;
+            text-decoration: none;
+            margin-top: auto;
+            margin-right: 22rem;
+            transition: all .2s;
+        }
+
+        &:hover {
+            transform: scale(1.2);
+        }
     }
 
 
