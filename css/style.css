@@ -71,6 +71,38 @@ body {
   pointer-events: none;
 }
 
+.download__button {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  margin-top: 5rem;
+  justify-self: center;
+}
+.download__button--bg {
+  background-color: rgb(118, 97, 164);
+  width: 17rem;
+  height: 4.8rem;
+  padding: 2rem;
+  border-radius: 12px;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.16);
+}
+.download__buttons {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(10rem, 20rem));
+  align-items: center;
+  justify-items: center;
+  gap: 5rem;
+}
+.download__buttons--img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
 .cooperation__button {
   font-size: 1.6rem;
   font-weight: 400;
@@ -641,18 +673,6 @@ body {
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 3.3rem;
-}
-.download__buttons {
-  grid-row: 1/2;
-  grid-column: 2/3;
-  background-color: rgb(118, 97, 164);
-  border-radius: 12px;
-  width: 17rem;
-  padding: 0.8rem;
-  margin-top: 5rem;
-  display: grid;
-  justify-items: center;
-  justify-self: end;
 }
 .download__img {
   grid-column: 1/2;

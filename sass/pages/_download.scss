@@ -36,19 +36,6 @@
         line-height: 3.3rem;
     }
 
-    &__buttons {
-        grid-row: 1 / 2;
-        grid-column: 2 / 3;
-        background-color: $color-purple;
-        border-radius: 12px;
-        width: 17rem;
-        padding: .8rem;
-        margin-top: 5rem;
-        display: grid;
-        justify-items: center;
-        justify-self: end;
-    }
-
     &__img {
         grid-column: 1 / 2;
         grid-row: 1 / 2;
