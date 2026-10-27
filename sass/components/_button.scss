@@ -1,20 +1,41 @@
 .button {
+    background-color: $color-purple;
+    border-radius: 12px;
+    box-shadow: 0 .4rem .4rem rgba(#000, .5);
+    transition: all .2s;
+
+    &:hover {
+        transform: translateY(-.4rem);
+    }
+
+    &:active {
+        transform: translateY(-.2rem);
+    }
+}
+
+.hero__button {
 
     &,
     &:link,
     &:visited {
         display: inline-block;
         text-decoration: none;
-        color: #fff;
+        color: $color-white;
         font-size: 1.6rem;
         font-weight: 400;
         padding: 1.5rem 10rem;
-        background-color: $color-purple;
-        border-radius: 12px;
-        box-shadow: 0 1rem 2rem rgba(#000, .5);
         margin-top: 4rem;
-        transition: all .2s;
 
+    }
+}
+
+.button__video {
+
+    &,
+    &:link,
+    &:visited {
+        display: inline-block;
+        transition: all .2s;
     }
 
     &:hover {
@@ -25,51 +46,34 @@
         transform: translateY(-.2rem);
     }
 
-    &__video {
+    &--link {
+        display: grid;
+        place-items: center;
+        position: relative;
 
-        &,
-        &:link,
-        &:visited {
-            display: inline-block;
-            transition: all .2s;
-        }
+        width: 8.6rem;
+        height: 8.6rem;
 
-        &:hover {
-            transform: translateY(-.4rem);
-        }
-
-        &:active {
-            transform: translateY(-.2rem);
-        }
-
-        &--link {
-            display: grid;
-            place-items: center;
-            position: relative;
-
-            width: 8.6rem;
-            height: 8.6rem;
-
-            text-decoration: none;
+        text-decoration: none;
 
 
-            &::before {
-                content: "";
-                position: absolute;
-                width: 10rem;
-                height: 10rem;
-                inset: 0;
-                border: 2px solid $color-red-light-1;
-                border-right-color: transparent;
-                border-radius: 50%;
-                transform: translate(3.7rem , -6.65rem) rotate(45deg);
-                pointer-events: none;
-            }
-
+        &::before {
+            content: "";
+            position: absolute;
+            width: 10rem;
+            height: 10rem;
+            inset: 0;
+            border: 2px solid $color-red-light-1;
+            border-right-color: transparent;
+            border-radius: 50%;
+            transform: translate(3.7rem, -6.65rem) rotate(45deg);
+            pointer-events: none;
         }
 
     }
+
 }
+
 
 .cooperation__button {
 
@@ -81,4 +85,25 @@
     border-radius: 12px;
     color: $color-white;
     margin-top: .8rem;
+}
+
+.download {
+
+    &__buttons {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(20rem, 40rem));
+        gap: 2rem;
+        justify-content: start;
+        align-items: center;
+        margin-top: 5rem;
+    }
+
+    &__button {
+        width: 17rem;
+        height: 4.8rem;
+
+    }
+
 }
