@@ -3,7 +3,7 @@
 *::after {
     padding: 0;
     margin: 0;
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
 
 html {
@@ -21,9 +21,9 @@ body {
     box-sizing: border-box;
 
     background-image: linear-gradient(to left top, $color-gray-dark-1 , $color-gray-dark-2 , $color-gray-light-2 , $color-gray-light-1);
-    //  background-repeat: no-repeat;
     position: relative;
     isolation: isolate;
+    overflow-x: clip;
 
     &::before {
         content: "";
