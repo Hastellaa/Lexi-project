@@ -56,4 +56,8 @@
 .line {
     margin-top: -28rem;
     margin-right: 30rem;
+
+    @media (max-width : 1200px) {
+        margin-top: -22rem;
+    }
 }

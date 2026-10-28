@@ -4,7 +4,7 @@
 
     &__container {
         display: grid;
-        grid-template-columns: 40% 20% 20%;
+        grid-template-columns: 30% 20% 30%;
         gap: 10rem;
         background-color: $color-gray-dark-3;
         border-radius: 12px;
@@ -66,7 +66,9 @@
 
     &__licenses {
 
-        &--img {}
+        &--img {
+            justify-self: end;
+        }
     }
 
 }

@@ -25,7 +25,7 @@
 
     &__stats {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(5rem , 15rem));
         gap: 4rem;
         justify-content: start;
         margin-top: 5rem;
